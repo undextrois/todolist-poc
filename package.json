@@ -1,0 +1,20 @@
+{
+  "name": "task-board-poc",
+  "version": "1.0.0",
+  "description": "Minimalist task board with GraphQL",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "express": "^4.18.2",
+    "graphql": "^16.8.1",
+    "graphql-http": "^1.22.0",
+    "graphql-subscriptions": "^2.0.0",
+    "graphql-ws": "^5.14.3",
+    "@graphql-tools/schema": "^10.0.2",
+    "ws": "^8.16.0",
+    "sqlite3": "^5.1.7",
+    "cors": "^2.8.5"
+  }
+}

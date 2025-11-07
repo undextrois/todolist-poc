@@ -1,0 +1,151 @@
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+      background: #fafafa;
+      color: #1d1d1f;
+      padding: 40px 20px;
+    }
+
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+
+    h1 {
+      font-size: 32px;
+      font-weight: 600;
+      margin-bottom: 32px;
+      letter-spacing: -0.5px;
+    }
+
+    .add-task {
+      display: flex;
+      gap: 8px;
+      margin-bottom: 40px;
+    }
+
+    input {
+      flex: 1;
+      padding: 12px 16px;
+      border: 1px solid #e5e5e5;
+      border-radius: 8px;
+      font-size: 15px;
+      background: white;
+      outline: none;
+      transition: border-color 0.2s;
+    }
+
+    input:focus {
+      border-color: #1d1d1f;
+    }
+
+    button {
+      padding: 12px 24px;
+      border: none;
+      border-radius: 8px;
+      font-size: 15px;
+      font-weight: 500;
+      cursor: pointer;
+      transition: all 0.2s;
+    }
+
+    .btn-primary {
+      background: #1d1d1f;
+      color: white;
+    }
+
+    .btn-primary:hover {
+      background: #000;
+    }
+
+    .btn-delete {
+      padding: 4px 8px;
+      background: transparent;
+      color: #86868b;
+      font-size: 13px;
+    }
+
+    .btn-delete:hover {
+      color: #1d1d1f;
+    }
+
+    .board {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 24px;
+    }
+
+    .column {
+      background: white;
+      border-radius: 12px;
+      padding: 20px;
+      border: 1px solid #e5e5e5;
+    }
+
+    .column h2 {
+      font-size: 17px;
+      font-weight: 600;
+      margin-bottom: 16px;
+      color: #86868b;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+    }
+
+    .task {
+      background: #fafafa;
+      padding: 16px;
+      border-radius: 8px;
+      margin-bottom: 12px;
+      border: 1px solid #f5f5f7;
+      display: flex;
+      justify-content: space-between;
+      align-items: start;
+      transition: all 0.2s;
+    }
+
+    .task:hover {
+      border-color: #e5e5e5;
+    }
+
+    .task-title {
+      flex: 1;
+      font-size: 15px;
+      line-height: 1.4;
+    }
+
+    .task-actions {
+      display: flex;
+      gap: 4px;
+      margin-left: 12px;
+    }
+
+    .status-btn {
+      padding: 4px 8px;
+      background: transparent;
+      color: #86868b;
+      font-size: 11px;
+      border-radius: 4px;
+    }
+
+    .status-btn:hover {
+      background: #f5f5f7;
+      color: #1d1d1f;
+    }
+
+    .empty-state {
+      color: #86868b;
+      font-size: 14px;
+      text-align: center;
+      padding: 24px;
+    }
+
+    @media (max-width: 768px) {
+      .board {
+        grid-template-columns: 1fr;
+      }
+    }
